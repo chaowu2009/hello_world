@@ -8,4 +8,4 @@ def client():
 
 def test_root(client):
     res = client.get('/')
-    assert b'Hello World!' in res.data
+    assert b'Hello world!' in res.data
