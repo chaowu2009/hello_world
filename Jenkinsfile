@@ -3,7 +3,7 @@ node {
       // copy source code from local file system and test
       // for a Dockerfile to build the Docker image
       deleteDir()
-      sh "cp -rf /opt/hello_world hello_world"
+      #sh "cp -rf /opt/hello_world hello_world"
       if (!fileExists("hello_world/Dockerfile")) {
          error('Dockerfile missing.')
       }
